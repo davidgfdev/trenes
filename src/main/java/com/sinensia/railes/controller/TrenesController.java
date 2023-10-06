@@ -45,4 +45,14 @@ public class TrenesController {
     public void actualizarVagones(@PathVariable int idTren, @PathVariable int vagones){
         trenesService.actualizarVagones(idTren, vagones);
     }
+
+    /**
+     * Devuelve una lista con todos los trenes de la BD.
+     * 
+     * @return listaTrenes
+     */
+    @GetMapping(value = "trenes", produces = JSON_MEDIA_TYPE)
+    public List<Tren> trenes(){
+        return trenesService.trenes();
+    }
 }

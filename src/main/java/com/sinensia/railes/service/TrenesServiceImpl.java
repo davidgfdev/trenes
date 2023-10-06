@@ -40,4 +40,14 @@ public class TrenesServiceImpl implements TrenesService{
             trenesDao.save(tren);
         }
     }
+
+    /**
+     * Devuelve una lista con todos los trenes.
+     * 
+     * @return listaTrenes
+     */
+    @Override
+    public List<Tren> trenes(){
+        return trenesDao.findAll();
+    }
 }
