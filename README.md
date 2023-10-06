@@ -36,3 +36,11 @@ METHOD: GET, RUTA: **trenes/{minVagones}/{maxVagones}**
 ### Actualizar el número de vagones de un tren.
 
 METHOD: PUT, RUTA: **tren/{idTren}/{vagones}**
+
+### Eliminar un tren.
+
+METHOD: DELETE, RUTA: **tren/{idTren}**
+
+### Obtener todos los trenes.
+
+METHOD: GET, RUTA: **trenes**
